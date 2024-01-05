@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<jewelry>
+  <product>
+    <code>1</code>
+    <name>Classic</name>
+    <type>Серьги</type>
+    <material>1</material>
+    <weight>4</weight>
+    <price>14060</price>
+  </product>
+  <product>
+    <code>2</code>
+    <name>Classic</name>
+    <type>Серьги</type>
+    <material>2</material>
+    <weight>4</weight>
+    <price>260</price>
+  </product>
+  <product>
+    <code>3</code>
+    <name>Maria</name>
+    <type>Колье</type>
+    <material>1</material>
+    <weight>50</weight>
+    <price>175750</price>
+  </product>
+  <product>
+    <code>4</code>
+    <name>Ann</name>
+    <type>Браслет</type>
+    <material>2</material>
+    <weight>30</weight>
+    <price>1950</price>
+  </product>
+  <product>
+    <code>5</code>
+    <name>Ann</name>
+    <type>Браслет</type>
+    <material>2</material>
+    <weight>30</weight>
+    <price>1950</price>
+  </product>
+</jewelry>

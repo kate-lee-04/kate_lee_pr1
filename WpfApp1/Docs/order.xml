@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<orders>
+  <order>
+    <id>1</id>
+    <last_name>Иванов</last_name>
+    <name>Иван</name>
+    <patronymic>Иванович</patronymic>
+    <status>не выполнен</status>
+  </order>
+  <order>
+    <id>1</id>
+    <last_name>Ли</last_name>
+    <name>Екатерина</name>
+    <patronymic>Анатольевна</patronymic>
+    <status>выполнено</status>
+  </order>
+  <order>
+    <id>2</id>
+    <last_name>Petrov</last_name>
+    <name>Petr</name>
+    <patronymic>Petrovich</patronymic>
+    <status>не выполнен</status>
+  </order>
+  <order>
+    <id>3</id>
+    <last_name>Иванов</last_name>
+    <name>Иван</name>
+    <patronymic>Иванович</patronymic>
+    <status>не выполнен</status>
+  </order>
+  <order>
+    <id>4</id>
+    <last_name>Иванов</last_name>
+    <name>Иван</name>
+    <patronymic>Иванович</patronymic>
+    <status>не выполнен</status>
+  </order>
+  <order>
+    <id>5</id>
+    <last_name>Иванов</last_name>
+    <name>Иван</name>
+    <patronymic>Иванович</patronymic>
+    <status>не выполнен</status>
+  </order>
+  <order>
+    <id>2</id>
+    <last_name>Иванов</last_name>
+    <name>Иван</name>
+    <patronymic>Иванович</patronymic>
+    <status>не выполнен</status>
+  </order>
+</orders>

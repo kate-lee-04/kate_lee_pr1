@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<materials>
+  <material>
+    <code>1</code>
+    <name>Золото_585</name>
+    <per_gram>3515</per_gram>
+  </material>
+  <material>
+    <code>2</code>
+    <name>Серебро_925</name>
+    <per_gram>65</per_gram>
+  </material>
+  <material>
+    <code>3</code>
+    <name>Белое золото_375</name>
+    <per_gram>1900</per_gram>
+  </material>
+</materials>

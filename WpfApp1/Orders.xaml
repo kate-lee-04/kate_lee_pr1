@@ -1,0 +1,122 @@
+﻿<Window x:Class="WpfApp1.Orders"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        d:DesignHeight="800" d:DesignWidth="1200"
+        Title="Заказы" Height="450" Width="800">
+    <Window.Resources>
+        <Style x:Key="CustomDataGridColumnHeaderStyle" TargetType="DataGridColumnHeader">
+            <Setter Property="Background" Value="#673ab7" />
+        </Style>
+
+        <Style x:Key="CustomDataGridStyle" TargetType="DataGrid">
+            <Setter Property="ColumnHeaderStyle" Value="{StaticResource CustomDataGridColumnHeaderStyle}" />
+        </Style>
+    </Window.Resources>
+
+    <Grid Background="#ffdadada">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="244*"/>
+            <ColumnDefinition Width="208*"/>
+            <ColumnDefinition Width="201*"/>
+            <ColumnDefinition Width="227*"/>
+            <ColumnDefinition Width="320*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="95*"/>
+            <RowDefinition Height="297*"/>
+            <RowDefinition Height="138*"/>
+            <RowDefinition Height="125*"/>
+            <RowDefinition Height="129*"/>
+        </Grid.RowDefinitions>
+
+        <Image Grid.ColumnSpan="5" Grid.RowSpan="5" Source="C:\Users\Kat\source\repos\WpfApp1\WpfApp1\image\orders-01.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+        <DataGrid  d:ItemsSource="{d:SampleData ItemCount=5}" Style="{StaticResource CustomDataGridStyle}" x:Name="dg" Margin="74,23,184,36" SelectionChanged="DataGrid_SelectionChanged" AutoGenerateColumns="True" FontFamily="Bahnschrift Condensed" FontSize="18" BorderBrush="{x:Null}" OpacityMask="Black" Background="#ffdadada" HorizontalGridLinesBrush="#673ab7" VerticalGridLinesBrush="#673ab7" Foreground="#673ab7" Grid.Row="1" Grid.ColumnSpan="4"/>
+        <TextBox x:Name="textid" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="78,66,0,0" TextWrapping="Wrap" Width="158" SelectionBrush="{x:Null}" Foreground="#FF310129" Height="38" VerticalAlignment="Top" FontFamily="Bahnschrift Condensed" FontSize="20" Grid.Row="2">
+            <TextBox.Resources>
+                <Style x:Key="{x:Type TextBox}" TargetType="{x:Type TextBox}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type TextBox}">
+                                <Border CornerRadius="15" BorderThickness="1" BorderBrush="#673ab7" Background="White">
+                                    <ScrollViewer x:Name="PART_ContentHost"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <Label Content="Код изделия" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.132,0.147" Width="90" FontFamily="Bahnschrift Condensed" FontSize="20" Margin="0,30,0,0" Height="32" Foreground="#673ab7" Grid.Row="2"/>
+        <TextBox x:Name="textname" VerticalContentAlignment="Center" HorizontalAlignment="Left" TextWrapping="Wrap" Width="160" SelectionBrush="{x:Null}" Foreground="#FF310129" Height="38" VerticalAlignment="Top" FontFamily="Bahnschrift Condensed" FontSize="20" Grid.Row="2" Grid.Column="2" Margin="24,66,0,0">
+            <TextBox.Resources>
+                <Style x:Key="{x:Type TextBox}" TargetType="{x:Type TextBox}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type TextBox}">
+                                <Border CornerRadius="15" BorderThickness="1" BorderBrush="#673ab7" Background="White">
+                                    <ScrollViewer x:Name="PART_ContentHost"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <Label Content="Имя" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.132,0.147" Width="90" FontFamily="Bahnschrift Condensed" FontSize="20" Margin="24,30,0,0" Height="32" Foreground="#673ab7" Grid.Row="2" Grid.Column="2"/>
+        <TextBox x:Name="textln" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="32,66,0,0" TextWrapping="Wrap" Width="158" SelectionBrush="{x:Null}" Foreground="#FF310129" Height="38" VerticalAlignment="Top" FontFamily="Bahnschrift Condensed" FontSize="20" Grid.Row="2" Grid.Column="1">
+            <TextBox.Resources>
+                <Style x:Key="{x:Type TextBox}" TargetType="{x:Type TextBox}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type TextBox}">
+                                <Border CornerRadius="15" BorderThickness="1" BorderBrush="#673ab7" Background="White">
+                                    <ScrollViewer x:Name="PART_ContentHost"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <Label Content="Фамилия" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.132,0.147" Width="90" FontFamily="Bahnschrift Condensed" FontSize="20" Margin="32,30,0,0" Height="32" Foreground="#673ab7" Grid.Row="2" Grid.Column="1"/>
+        <TextBox x:Name="textpatronymic" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="27,66,0,0" TextWrapping="Wrap" Width="160" SelectionBrush="{x:Null}" Foreground="#FF310129" Height="38" VerticalAlignment="Top" FontFamily="Bahnschrift Condensed" FontSize="20" Grid.Row="2" Grid.Column="3">
+            <TextBox.Resources>
+                <Style x:Key="{x:Type TextBox}" TargetType="{x:Type TextBox}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type TextBox}">
+                                <Border CornerRadius="15" BorderThickness="1" BorderBrush="#673ab7" Background="White">
+                                    <ScrollViewer x:Name="PART_ContentHost"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <Label Content="Отчество" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.132,0.147" Width="90" FontFamily="Bahnschrift Condensed" FontSize="20" Margin="27,30,0,0" Height="32" Foreground="#673ab7" Grid.Row="2" Grid.Column="3"/>
+        <Button Content="Выполнено" Click="ChangeStatus_Click" Margin="74,0,12,0" Height="40" Grid.Row="3"/>
+        <Label Content="Заказы" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.132,0.147" Width="126" FontFamily="Bahnschrift Condensed" FontSize="40" Margin="74,33,0,0" Height="59" Foreground="#673ab7"/>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="88,0,0,0" VerticalAlignment="Center" Height="40" Width="158" Click="ButtonMenu_Click" FontSize="16"  RenderTransformOrigin="0.494,2.72" Grid.Row="4" Grid.Column="4">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<authentications>
+  <auth>
+    <log>ktoto</log>
+    <pass>qwerty</pass>
+  </auth>
+  <auth>
+    <log>kat</log>
+    <pass>kotkot</pass>
+  </auth>
+  <auth>
+    <log>admin</log>
+    <pass>admin01</pass>
+  </auth>
+  <auth>
+    <log>den</log>
+    <pass>098765</pass>
+  </auth>
+  <auth>
+    <log>ann</log>
+    <pass>zxcvb</pass>
+  </auth>
+  <auth>
+    <log>lika</log>
+    <pass>asdfg</pass>
+  </auth>
+  <auth>
+    <log>new_person</log>
+    <pass>15031506</pass>
+  </auth>
+</authentications>
